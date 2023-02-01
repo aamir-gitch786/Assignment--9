@@ -7,10 +7,22 @@ Switch Statement.
 
 int main()
 {
-   int n;
+   int n,a;
    printf("Enter even number :");
    scanf("%d",&n);
-   printf(" %d \nIts upper nearest odd number is %d ",n,n+1);
+   a=(n%2==0)?1:2;
+   switch(a)
+   {
+       case 1:
+       printf(" %d \nIts upper nearest odd number is %d ",n,n+1);
+       break;
+       case 2:
+       printf("You have entered odd number\n");
+       
+       
+       
+   }
+   
     return 0;
 }
 
